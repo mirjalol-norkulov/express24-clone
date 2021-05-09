@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "signIn": "Вход",
+    "signUp": "Регистрация",
+    "dontHaveAccount": "У Вас еще нет аккаунта в Express24?",
+    "getTheCode": "Получить код",
+    "verificationCode": "Проверичный код",
+    "verificationCodeSendToNumber": "Проверочный код был отправлен на мобильный номер {phoneNumber}",
+    "canGetCodeAgain": "Получить код повторно можно через {seconds} секунд"
+  },
+  "phoneNumber": "Номер телефона"
+}

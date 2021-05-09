@@ -25,7 +25,9 @@
       <transition name="panel">
         <div
           v-if="visible"
-          class="e-modal__panel">
+          class="e-modal__panel"
+          :style="{width: width || 'auto'}"
+        >
           <!-- Close button-->
           <button v-if="showClose" class="e-modal__close-btn" @click="handleClose">
             <close-icon/>
@@ -54,6 +56,10 @@ export default {
     closeOnEscape: {
       type: Boolean,
       default: true,
+    },
+    width: {
+      type: [String],
+      default: undefined,
     },
   },
   components: { CloseIcon },
@@ -111,8 +117,8 @@ export default {
 
   &__panel {
     @apply relative inline-block align-bottom
-    bg-white rounded-lg text-left overflow-hidden
-    shadow-xl transform transition-all p-4;
+    bg-white rounded text-left overflow-hidden
+    shadow-xl transform transition-all;
   }
 }
 
@@ -123,7 +129,7 @@ export default {
     }
 
     &__panel {
-      @apply my-8 align-middle max-w-lg w-full;
+      @apply my-8 align-middle max-w-lg w-auto;
     }
   }
 }

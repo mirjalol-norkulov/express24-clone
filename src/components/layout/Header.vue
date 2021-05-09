@@ -12,13 +12,13 @@
       <router-link
         class="header__link font-bold ml-4"
         :to="{name: 'home', query: {modal: 'sign-in'}}">
-        Kirish
+        {{ $t('auth.signIn') }}
       </router-link>
       <span class="mx-1.5 font-bold">|</span>
       <router-link
         class="header__link"
         :to="{name: 'home', query: {modal: 'sign-up'}}">
-        Ro'yxatdan o'tish
+        {{ $t('auth.signUp') }}
       </router-link>
     </div>
   </nav>

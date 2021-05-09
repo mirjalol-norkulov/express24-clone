@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "signIn": "Kirish",
+    "signUp": "Ro'yxatdan o'tish",
+    "dontHaveAccount": "Express24'da hali akkauntingiz mavjud emasmi?",
+    "getTheCode": "Kodni qabul qilish",
+    "verificationCode": "Tasdiqlash kodi",
+    "verificationCodeSendToNumber": "Tasdiqlash kodi {phoneNumber} mobil telefon raqamiga yuborildi",
+    "canGetCodeAgain": "Kodni {seconds} soniya ichida yana olishingiz mumkin"
+  },
+  "phoneNumber": "Telefon raqami"
+}

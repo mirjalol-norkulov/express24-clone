@@ -1,4 +1,13 @@
 module.exports = {
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: `
+          @import "@/assets/css/global.scss";
+        `,
+      },
+    },
+  },
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');
 
@@ -17,5 +26,14 @@ module.exports = {
         args[0].title = 'Сервис доставки еды и товаров';
         return args;
       });
+  },
+
+  pluginOptions: {
+    i18n: {
+      locale: 'ru',
+      fallbackLocale: 'ru',
+      localeDir: 'locales',
+      enableInSFC: true,
+    },
   },
 };

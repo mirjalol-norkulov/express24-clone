@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "dontHaveAccount": "Don’t you have an account on Express24 yet?",
+    "getTheCode": "Get the code",
+    "verificationCode": "Verification code",
+    "verificationCodeSendToNumber": "The verification code has been sent to the mobile number {phoneNumber}",
+    "canGetCodeAgain": "You can get the code again in {seconds} seconds"
+  },
+  "phoneNumber": "Phone number"
+}
