@@ -6,7 +6,12 @@
     "getTheCode": "Получить код",
     "verificationCode": "Проверичный код",
     "verificationCodeSendToNumber": "Проверочный код был отправлен на мобильный номер {phoneNumber}",
-    "canGetCodeAgain": "Получить код повторно можно через {seconds} секунд"
+    "canGetCodeAgain": "Получить код повторно можно через {seconds} секунд",
+    "yourName": "Ваше имя",
+    "alreadyHaveAccount": "Уже зарегистрированы в Express24?",
+    "iAcceptUserAgreement": "Принимаю пользовательское соглашение",
+    "byRegisteringYouWillAccept": "Регистрируясь, вы принимаете условия {userAgreement}",
+    "userAgreement": "пользовательского соглашения"
   },
   "phoneNumber": "Номер телефона"
 }

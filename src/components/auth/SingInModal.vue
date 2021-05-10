@@ -141,7 +141,7 @@ const toggleMachine = createMachine({
 });
 
 export default {
-  name: 'LoginModal',
+  name: 'SignInModal',
   components: {
     CountDown,
     EButton,

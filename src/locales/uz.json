@@ -6,7 +6,12 @@
     "getTheCode": "Kodni qabul qilish",
     "verificationCode": "Tasdiqlash kodi",
     "verificationCodeSendToNumber": "Tasdiqlash kodi {phoneNumber} mobil telefon raqamiga yuborildi",
-    "canGetCodeAgain": "Kodni {seconds} soniya ichida yana olishingiz mumkin"
+    "canGetCodeAgain": "Kodni {seconds} soniya ichida yana olishingiz mumkin",
+    "yourName": "Ismingiz",
+    "alreadyHaveAccount": "Express24-da allaqachon ro'yxatdan o'tganmisiz?",
+    "iAcceptUserAgreement": "Foydalanish shartlarini qabul qilaman",
+    "byRegisteringYouWillAccept": "Ro'yxatdan o'tib, siz shartlarni {userAgreement} qabul qilasiz",
+    "userAgreement": "foydalanish shartlarini"
   },
   "phoneNumber": "Telefon raqami"
 }

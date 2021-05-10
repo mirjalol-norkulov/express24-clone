@@ -4,20 +4,20 @@
     <div class="container mx-auto">
       <router-view/>
     </div>
-    <login-modal :visible="isLoginModalVisible" @close="isLoginModalVisible = false"/>
+    <sign-in-modal :visible="isLoginModalVisible" @close="isLoginModalVisible = false"/>
     <sign-up-modal :visible="isSignUpModalVisible" @close="isSignUpModalVisible=false"/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/layout/Header.vue';
-import LoginModal from '@/components/auth/LoginModal.vue';
+import SignInModal from '@/components/auth/SingInModal.vue';
 import SignUpModal from '@/components/auth/SignUpModal.vue';
 
 export default {
   components: {
     SignUpModal,
-    LoginModal,
+    SignInModal,
     Header,
   },
   computed: {

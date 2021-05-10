@@ -11,13 +11,13 @@
       <header-location-select class="ml-4"/>
       <router-link
         class="header__link font-bold ml-4"
-        :to="{name: 'home', query: {modal: 'sign-in'}}">
+        :to="{name: $route.name, query: {modal: 'sign-in'}}">
         {{ $t('auth.signIn') }}
       </router-link>
       <span class="mx-1.5 font-bold">|</span>
       <router-link
         class="header__link"
-        :to="{name: 'home', query: {modal: 'sign-up'}}">
+        :to="{name: $route.name, query: {modal: 'sign-up'}}">
         {{ $t('auth.signUp') }}
       </router-link>
     </div>

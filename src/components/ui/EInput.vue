@@ -44,6 +44,14 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    unmaskedValue: {
+      type: String,
+      required: false,
+    },
+    isComplete: {
+      type: Boolean,
+      required: false,
+    },
   },
   computed: {
     inputId() {
@@ -74,6 +82,8 @@ export default {
         this.$emit('input', value);
         if (this.mask && this.maskObject) {
           this.$emit('complete-change', this.maskObject.isComplete());
+          this.$emit('update:unmaskedValue', this.maskObject.unmaskedvalue());
+          this.$emit('update:isComplete', this.maskObject.isComplete());
         }
       },
     },

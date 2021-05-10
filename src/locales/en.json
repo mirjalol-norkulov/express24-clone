@@ -6,7 +6,12 @@
     "getTheCode": "Get the code",
     "verificationCode": "Verification code",
     "verificationCodeSendToNumber": "The verification code has been sent to the mobile number {phoneNumber}",
-    "canGetCodeAgain": "You can get the code again in {seconds} seconds"
+    "canGetCodeAgain": "You can get the code again in {seconds} seconds",
+    "yourName": "Your name",
+    "alreadyHaveAccount": "Already registered with Express24?",
+    "iAcceptUserAgreement": "I accept user agreement",
+    "byRegisteringYouWillAccept": "By signing up, you accept the terms and conditions of {userAgreement}",
+    "userAgreement": "user agreement"
   },
   "phoneNumber": "Phone number"
 }

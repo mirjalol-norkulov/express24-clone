@@ -57,6 +57,10 @@ export default {
       type: Boolean,
       default: true,
     },
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: true,
+    },
     width: {
       type: [String],
       default: undefined,
@@ -75,7 +79,9 @@ export default {
   },
   methods: {
     handleOverlayClick() {
-      this.close();
+      if (this.closeOnClickOverlay) {
+        this.close();
+      }
     },
     handleClose() {
       this.close();
