@@ -4,17 +4,24 @@
     <input
       ref="input"
       class="e-input__input"
+      :placeholder="placeholder"
       v-model="innerValue"
       :id="inputId">
+    <div class="e-input__suffix">
+      <loading-spinner v-if="loading" size="14px"/>
+      <slot v-else name="suffix"/>
+    </div>
   </div>
 </template>
 
 <script>
 import { v4 as uuidv4 } from 'uuid';
 import Inputmask from 'inputmask';
+import LoadingSpinner from '@/components/ui/LoadingSpinner.vue';
 
 const VARIANTS = Object.freeze({
   INLINE: 'inline',
+  BORDER: 'border',
 });
 
 const DEFAULT_MASK_OPTIONS = {
@@ -23,6 +30,7 @@ const DEFAULT_MASK_OPTIONS = {
 
 export default {
   name: 'EInput',
+  components: { LoadingSpinner },
   props: {
     value: {
       type: [String, Number],
@@ -51,6 +59,14 @@ export default {
     isComplete: {
       type: Boolean,
       required: false,
+    },
+    placeholder: {
+      type: String,
+      required: false,
+    },
+    loading: {
+      type: Boolean,
+      default: false,
     },
   },
   computed: {
@@ -103,16 +119,21 @@ export default {
 
 <style lang="scss">
 .e-input {
-  @apply relative inline-block px-4 py-3;
+  @apply relative inline-flex items-center;
 
   &__input {
-    @apply placeholder-gray-light w-full block outline-none leading-3;
+    @apply placeholder-gray-light w-full block outline-none leading-3 px-4 py-3;
 
     &:focus {
       @apply outline-none;
     }
   }
 
+  &__suffix {
+    @apply pr-3;
+  }
+
+  // Inline variant
   &--inline {
     @apply px-0 border-b border-gray-light transition-all duration-300;
 
@@ -128,6 +149,15 @@ export default {
       .e-input__label {
         @apply transform scale-75 -translate-y-full;
       }
+    }
+  }
+
+  // Border variant
+  &--border {
+    @apply border border-gray-light border-solid bg-white rounded-lg text-sm;
+
+    .e-input__input {
+      @apply rounded-lg;
     }
   }
 }

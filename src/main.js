@@ -1,5 +1,7 @@
 import Vue from 'vue';
 
+import '@/plugins/vue-leaflet';
+
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';

@@ -13,5 +13,8 @@
     "byRegisteringYouWillAccept": "Ro'yxatdan o'tib, siz shartlarni {userAgreement} qabul qilasiz",
     "userAgreement": "foydalanish shartlarini"
   },
-  "phoneNumber": "Telefon raqami"
+  "phoneNumber": "Telefon raqami",
+  "search": "Qidiruv",
+  "confirmAddress": "Подтвердить адрес",
+  "noAddressSpecified": "Manzil ko'rsatilmagan"
 }

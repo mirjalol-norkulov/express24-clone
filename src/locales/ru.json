@@ -13,5 +13,8 @@
     "byRegisteringYouWillAccept": "Регистрируясь, вы принимаете условия {userAgreement}",
     "userAgreement": "пользовательского соглашения"
   },
-  "phoneNumber": "Номер телефона"
+  "phoneNumber": "Номер телефона",
+  "search": "Поиск",
+  "confirmAddress": "Подтвердить адрес",
+  "noAddressSpecified": "Адрес не указан"
 }

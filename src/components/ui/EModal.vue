@@ -107,7 +107,9 @@ export default {
   }
 
   &__close-btn {
-    @apply absolute top-2 right-2 rounded-full bg-white text-gray-700;
+    @apply absolute top-2 right-2 rounded-full bg-white text-gray-700 p-1.5;
+    z-index: 9999;
+
     &:focus {
       @apply outline-none;
     }
@@ -135,7 +137,7 @@ export default {
     }
 
     &__panel {
-      @apply my-8 align-middle max-w-lg w-auto;
+      @apply my-8 align-middle max-w-4xl w-auto;
     }
   }
 }

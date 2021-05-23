@@ -28,3 +28,18 @@ body {
     @apply opacity-100;
   }
 }
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: theme('colors.primary.DEFAULT');
+    border-radius: 4px;
+  }
+}

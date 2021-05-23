@@ -13,5 +13,6 @@
     "byRegisteringYouWillAccept": "By signing up, you accept the terms and conditions of {userAgreement}",
     "userAgreement": "user agreement"
   },
-  "phoneNumber": "Phone number"
+  "phoneNumber": "Phone number",
+  "search": "Search"
 }
