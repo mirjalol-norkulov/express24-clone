@@ -16,5 +16,10 @@
   "phoneNumber": "Номер телефона",
   "search": "Поиск",
   "confirmAddress": "Подтвердить адрес",
-  "noAddressSpecified": "Адрес не указан"
+  "noAddressSpecified": "Адрес не указан",
+  "aboutUs": "О нас",
+  "userAgreement": "Пользовательское соглашение",
+  "contacts": "Контакты",
+  "faq": "Вопросы и ответы",
+  "cooperation": "Заявка на сотрудничество"
 }

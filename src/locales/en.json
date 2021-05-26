@@ -14,5 +14,12 @@
     "userAgreement": "user agreement"
   },
   "phoneNumber": "Phone number",
-  "search": "Search"
+  "search": "Search",
+  "confirmAddress": "Confirm Address",
+  "noAddressSpecified": "No address",
+  "aboutUs": "About us",
+  "userAgreement": "User Agreement",
+  "contacts": "Contacts",
+  "faq": "Questions and answers",
+  "cooperation": "Application for cooperation"
 }

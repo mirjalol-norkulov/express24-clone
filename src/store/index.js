@@ -2,11 +2,13 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
+import i18n from './modules/i18n';
+
 Vue.use(Vuex);
 
 const persistedState = createPersistedState({
   key: 'express24-clone',
-  paths: ['currentLocation'],
+  paths: ['currentLocation', 'i18n.locale'],
 });
 
 export default new Vuex.Store({
@@ -19,6 +21,8 @@ export default new Vuex.Store({
     },
   },
   actions: {},
-  modules: {},
+  modules: {
+    i18n,
+  },
   plugins: [persistedState],
 });

@@ -20,6 +20,7 @@
         :to="{name: $route.name, query: {modal: 'sign-up'}}">
         {{ $t('auth.signUp') }}
       </router-link>
+      <e-lang-switcher class="ml-4"/>
     </div>
   </nav>
 </template>
@@ -28,10 +29,12 @@
 import Logo from '@/components/Logo.vue';
 import HeaderSearch from '@/components/layout/HeaderSearch.vue';
 import HeaderLocationSelect from '@/components/layout/HeaderLocationSelect.vue';
+import ELangSwitcher from '@/components/layout/ELangSwitcher.vue';
 
 export default {
   name: 'Header',
   components: {
+    ELangSwitcher,
     HeaderLocationSelect,
     HeaderSearch,
     Logo,

@@ -15,6 +15,11 @@
   },
   "phoneNumber": "Telefon raqami",
   "search": "Qidiruv",
-  "confirmAddress": "Подтвердить адрес",
-  "noAddressSpecified": "Manzil ko'rsatilmagan"
+  "confirmAddress": "Manzilni tasdiqlang",
+  "noAddressSpecified": "Manzil ko'rsatilmagan",
+  "aboutUs": "Biz haqimizda",
+  "userAgreement": "Foydalanish shartlari",
+  "contacts": "Aloqa",
+  "faq": "Savollar va javoblar",
+  "cooperation": "Hamkorlik uchun ariza"
 }

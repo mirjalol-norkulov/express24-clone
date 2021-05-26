@@ -1,21 +1,25 @@
 <template>
-  <div id="app">
+  <div class="flex flex-col min-h-screen" id="app">
     <Header/>
-    <div class="container mx-auto">
+    <div class="container mx-auto flex-1">
       <router-view/>
     </div>
     <sign-in-modal :visible="isLoginModalVisible" @close="isLoginModalVisible = false"/>
     <sign-up-modal :visible="isSignUpModalVisible" @close="isSignUpModalVisible=false"/>
+
+    <e-footer/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/layout/Header.vue';
-import SignInModal from '@/components/auth/SingInModal.vue';
 import SignUpModal from '@/components/auth/SignUpModal.vue';
+import SignInModal from '@/components/auth/SingInModal.vue';
+import EFooter from '@/components/layout/EFooter.vue';
 
 export default {
   components: {
+    EFooter,
     SignUpModal,
     SignInModal,
     Header,
@@ -51,6 +55,19 @@ export default {
           },
         });
       },
+    },
+  },
+  mounted() {
+    this.removePreloader();
+  },
+  methods: {
+    removePreloader() {
+      if (document) {
+        const preloader = document.querySelector('#preloader');
+        if (preloader) {
+          preloader.remove();
+        }
+      }
     },
   },
 };

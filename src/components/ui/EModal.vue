@@ -87,7 +87,8 @@ export default {
       this.close();
     },
     onKeyUp(event) {
-      if (event.keyCode === 27) {
+      if (this.visible && event.keyCode === 27) {
+        event.preventDefault();
         this.close();
       }
     },
